@@ -7,52 +7,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ekaterina Gusentsova</h1>
-        <p>Frontend Developer in Training</p>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Motivated developer learning web technologies. Passionate about creating beautiful and functional websites.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="https://img.freepik.com/premium-vector/characters-are-from-series-animated-tv-series_852896-1799.jpg" alt="Ekaterina Gusentsova profile photo">
+                </div>
+                <div class="header-text">
+                    <h1>Ekaterina Gusentsova</h1>
+                    <p>Frontend Developer in Training</p>
+                </div>
+            </div>
+        </header>
+
+        <nav>
             <ul>
-                <li>HTML5 &amp; CSS3</li>
-                <li>JavaScript (Basic)</li>
-                <li>Git &amp; GitHub</li>
-                <li>VS Code</li>
-                <li>Responsive Design</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+               <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>No commercial experience yet</li>
-                <li>Currently studying frontend development at RSSchool</li>
-                <li>Working on personal projects to improve skills</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p><strong>Belarusian State University of Informatics and Radioelectronics (2023 - 2027)</strong><br>Computer Science</p>
-        </section>
-        <section>
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian - Native</li>
-                <li>English - B2</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: katya.gusentsova84@gmail.com<br>
-            GitHub: <a href="https://github.com/Kasenhova67">github.com/Kasenhova67</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Ekaterina Gusentsova. All rights reserved.</p>
-    </footer>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Motivated and enthusiastic developer currently learning web technologies. Passionate about creating beautiful, responsive, and functional websites. I am a quick learner who enjoys solving problems and working on challenging projects.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>VS Code</li>
+                    <li>Responsive Design</li>
+                    <li>Flexbox &amp; Grid</li>
+                    <li>Figma Basics</li>
+                </ul>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>No commercial experience yet</li>
+                    <li>Currently studying frontend development at RSSchool</li>
+                    <li>Working on personal projects to improve skills</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Belarusian State University of Informatics and Radioelectronics (2023 - 2027)</strong></p>
+            </section>
+
+            <section id="code-example">
+                <h2>Code Example</h2>
+                <p>Example of a JavaScript function that validates email format:</p>
+                <pre><code>
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+console.log(validateEmail('katya.gusentsova84@gmail.com')); // true
+console.log(validateEmail('invalid-email')); // false
+                </code></pre>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li><strong>Russian</strong> - Native</li>
+                    <li><strong>English</strong> - B2 (Upper Intermediate)</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><strong>Email:</strong> katya.gusentsova84@gmail.com</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Kasenhova67" target="_blank">github.com/Kasenhova67</a></li>
+                    <li><strong>Location:</strong> Belarus</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Ekaterina Gusentsova</p>
+                <p><a href="https://github.com/Kasenhova67" target="_blank">GitHub Profile</a></p>
+                <a href="https://rs.school/" target="_blank">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School Logo" class="rs-logo">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
